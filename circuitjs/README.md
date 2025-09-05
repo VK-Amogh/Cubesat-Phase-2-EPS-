@@ -1,6 +1,6 @@
 # CircuitJS schematic for CubeSat EPS
 
-This folder contains `cube_eps.json` — an export you can import into CircuitJS. The file contains:
+This folder contains `circuitjs-EPS` — an export you can import into CircuitJS. The file contains:
 - Battery (7.4 V + 0.15 Ω)
 - Solar Voltage Controlled Current Source using PWL time function (9 s orbit)
 - Loads as resistors
