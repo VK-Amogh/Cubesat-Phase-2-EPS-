@@ -1,0 +1,27 @@
+pwl(t, 0, 0, 6, 0.81081, 6, 0.81081, 9, 0)
+
+- Battery: `7.4 V` with series `0.15 Ω`.
+- Loads (resistors):
+- OBC: `55 Ω`
+- ADCS: `110 Ω`
+- TT&C: `18.253333333333334 Ω`
+- Payload: `15.534751773049646 Ω`
+- Switch (Analog SPST): set
+- `Ron = 0.01`
+- `Roff = 1e9`
+- `Threshold (Vt) = 2.5`
+- Pulldown = checked, Normally closed = unchecked
+
+- Switch control pulses (PULSE expressions)
+- Payload:
+  ```
+  PULSE(0 5 0 0.01 0.01 6 9)
+  ```
+- TT&C:
+  ```
+  PULSE(0 5 0 0.01 0.01 0.45 9)
+  ```
+
+## What to expect
+- V(bus): ~7.4 V from t=0→6 s, slight droop t=6→9 s.
+- I(battery): small positive during sun (charging), negative during eclipse (discharging); short negative spikes during TT&C bursts.
