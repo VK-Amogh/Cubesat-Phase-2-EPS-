@@ -1,4 +1,4 @@
 - Create a new Text file 
-- Copy the Capture-CIS-Preview.html code
+- Copy the EPS-OrcadX-preview.html code
 - Paste it in the text file and save it as .html
 - Open the .html file to get the detailed circuit
